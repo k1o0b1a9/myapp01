@@ -18,7 +18,7 @@ gem 'bootstrap-will_paginate', '1.0.0'
 gem 'ransack'
 
 group :development do
-  gem 'sqlite3', '1.3.13'
+  gem 'sqlite3', '~> 1.3.0'
   gem 'byebug',  '9.0.6', platform: :mri
 end
 
