@@ -13,13 +13,14 @@ gem 'jbuilder',     '2.7.0'
 gem 'faker',          '1.7.3'
 gem 'carrierwave',             '1.2.2'
 gem 'mini_magick',             '4.7.0'
-gem 'will_paginate',           '3.1.7'
-gem 'bootstrap-will_paginate', '1.0.0'
-gem 'ransack'
+
 
 group :development do
   gem 'sqlite3', '~> 1.3.6'
   gem 'byebug',  '9.0.6', platform: :mri
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'rails-footnotes'
 end
 
 group :development do
