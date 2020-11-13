@@ -18,15 +18,13 @@ gem 'omniauth-twitter'
 # Active Admin
 gem 'activeadmin'
 
+
 group :development do
-  gem 'sqlite3', '~> 1.3.6'
+  gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rails-footnotes'
-end
-
-group :development do
   gem 'web-console',           '3.5.1'
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
@@ -34,6 +32,7 @@ group :development do
 end
 
 group :production do
+  gem 'pg'
   gem 'fog', '1.42'
 end
 
