@@ -1,2 +1,10 @@
 <% provide(:title, "Top") %>
 <h1>This is Top Page!!!!!!!!!!</h1>
+<% @posts.each do|post| %>
+    <div class="posts-index-item">
+        <ul>
+        <%= post.content %>
+        <%= post.created_at %>
+        </ul>
+    </div>
+<% end %>
