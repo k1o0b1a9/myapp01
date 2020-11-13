@@ -4,7 +4,7 @@
     <div class="posts-index-item">
         <ul>
         <%= post.content %>
-        <%= post.created_at %>
+        <%= post.created_at.to_s(:datetime_jp) %>
         </ul>
     </div>
 <% end %>
