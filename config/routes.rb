@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get "tweet/new" => "posts#new"
   post "tweet" => "posts#create"
   #問い合わせフォーム
-  get "contact" => "inquiry#index"              # 入力画面
-  post "contact/confirm" => "inquiry#confirm"   # 確認画面
-  post "contact/thanks" => "inquiry#thanks"     # 送信完了画面
+  get "contact" => "home#contact"
+  #下記問い合わせフォームはSendgrid使えないから保留
+  #get "contact" => "inquiry#index"              # 入力画面
+  #post "contact/confirm" => "inquiry#confirm"   # 確認画面
+  #post "contact/thanks" => "inquiry#thanks"     # 送信完了画面
 end
