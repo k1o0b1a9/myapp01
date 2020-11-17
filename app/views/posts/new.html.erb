@@ -1,13 +1,12 @@
 <% provide(:title, "Tweet") %>
  <div>
-  <%= form_tag(tweet_path, method: :post) do %>
+  <%= form_tag(tweet_success_path, method: :post) do %>
     <h3>投稿画面</h3>
     <div>
-      <label>投稿内容</label>
-      <textarea name="text" placeholder="Enter Content…"></textarea>
+      <textarea id="textarea1" name="text" placeholder="投稿内容" class="form-control"></textarea>
     </div>
     <div>
-      <input type="submit">
+      <input type="submit" class="form-control">
     </div>
   <% end %>
 </div>

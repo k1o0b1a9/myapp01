@@ -1,8 +1,5 @@
-  <div class="contents row">
-    <div class="success">
-      <h3>投稿が完了しました。</h3>
-      <li class="nav-item">
-        <%= link_to "投稿一覧へ戻る", root_path, class: "nav-link text-decoration-none" %>
-      </li>
-    </div>
-  </div>
+  <% provide(:title, "Success") %>
+  <p>投稿が完了しました。<p>
+  <a class="nav-item">
+    <%= link_to "投稿一覧へ戻る", root_path, class: "nav-link" %>
+  </a>
