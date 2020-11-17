@@ -12,6 +12,7 @@ gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'carrierwave',             '1.2.2'
 gem 'mini_magick',             '4.7.0'
+gem 'font-awesome-sass', '~> 5.2.0'
 # Devise
 gem 'devise'
 gem 'omniauth-twitter'
