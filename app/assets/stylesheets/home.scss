@@ -106,5 +106,8 @@ footer {
 .main-container {
   background-image: image-url("background.jpeg");
   height: 800px;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size:contain;
+  background-attachment: fixed;
 }
