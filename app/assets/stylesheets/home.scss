@@ -104,17 +104,19 @@ footer {
 }
 
 /*background*/
-.main-container {
+/*.main-container {
   background-image: image-url("background.jpeg");
   height: 800px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size:contain;
   background-attachment: fixed;
-}
+}*/
 
 .jumbotron { 
-  background:url(background.jpeg) center no-repeat; 
+  background-image: image-url("background.jpeg"); 
+  background-position: center ;
+  background-repeat: no-repeat; 
   background-size: cover;
   height: 750px;
   vertical-align: bottom;
