@@ -13,7 +13,7 @@ $gray-medium-light: #eaeaea;
 /* universal */
 
 body {
-  padding-top: 0px;
+  padding-top: 90px;
 }
 
 section {
@@ -38,9 +38,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family: "title-font";
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -71,7 +73,7 @@ p {
   padding-top: 2px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: black;
     text-decoration: none;
   }
 }
@@ -104,14 +106,6 @@ footer {
 }
 
 /*background*/
-/*.main-container {
-  background-image: image-url("background.jpeg");
-  height: 800px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size:contain;
-  background-attachment: fixed;
-}*/
 
 .jumbotron { 
   background-image: image-url("background.jpeg"); 
@@ -121,4 +115,14 @@ footer {
   height: 750px;
   background-size: 100% 100%;
   line-height: 1.0em;
+}
+
+/*microposts*/
+
+.tweet{
+  border-top: 1px solid #e8e8e8;
+  font-family: "tweet-font";
+  font-weight: bold;
+  /*background-color: #fff;*/ /* 背景色 */
+  /*border: 1px solid #ccc;*/ /* 枠線 */
 }
