@@ -1,4 +1,5 @@
 <% provide(:title, "Top") %>
+<% if logged_in? %>
 <table class="table table-bordered border-primary table-hover table-sm posts_table">
   <thead class="thead-dark">
     <tr>
@@ -21,3 +22,8 @@
     <% end %>
   </tbody>
 </table>
+<% else %>
+  <h1>This is Top Page</h1>
+  <br>
+  <h1>Please Login!!!!</h1>
+<% end %>
