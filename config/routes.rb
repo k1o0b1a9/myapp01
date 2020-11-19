@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :accounts
+    devise_for :accounts, :controllers => {
+    :registrations => 'accounts/registrations',
+    :sessions => 'accounts/sessions'   
+  } 
+
+  devise_scope :account do
+    get "sign_in", :to => "accounts/sessions#new"
+    get "sign_out", :to => "accounts/sessions#destroy" 
+  end
+  
   root  "home#top"
   get "about" => "home#about"
   #投稿画面
