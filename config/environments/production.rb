@@ -89,6 +89,9 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   
+  #devise
+  config.action_mailer.default_url_options = { :host => 'my-app-1019.herokuapp.com' }
+  
   # Setup the mailer config
   # Use SendGrid - Add-ons - Heroku
   config.action_mailer.delivery_method = :smtp
