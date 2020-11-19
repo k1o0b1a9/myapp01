@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :accounts
   root  "home#top"
   get "about" => "home#about"
   #投稿画面
