@@ -12,8 +12,6 @@ Rails.application.routes.draw do
   #post "contact/confirm" => "inquiry#confirm"   # 確認画面
   #post "contact/thanks" => "inquiry#thanks"     # 送信完了画面
   #ログイン機能
-  get    "login",   to: "sessions#new"
-  post   "login",   to: "sessions#create"
-  delete "logout",  to: "sessions#destroy"
+  
   
 end
