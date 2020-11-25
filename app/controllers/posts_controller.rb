@@ -2,6 +2,6 @@ class PostsController < ApplicationController
   def new
   end
   def create
-    Post.create(content: params[:text])
+    Post.create(title: params[:string], content: params[:text])
   end
 end

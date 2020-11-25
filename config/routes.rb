@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   
   root  "home#top"
   get "about" => "home#about"
+  get "posts/:id" => "home#show"
   #投稿画面
   get "tweet" => "posts#new"
   post "tweet/success" => "posts#create"
