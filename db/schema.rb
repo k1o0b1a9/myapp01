@@ -28,9 +28,11 @@ ActiveRecord::Schema.define(version: 20201125073955) do
 
   create_table "posts", force: :cascade do |t|
     t.text "content"
+    t.integer "account_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "title"
+    t.index ["account_id"], name: "index_posts_on_account_id"
   end
 
   create_table "profiles", force: :cascade do |t|
