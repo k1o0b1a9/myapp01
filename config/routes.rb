@@ -15,6 +15,12 @@ Rails.application.routes.draw do
   #投稿画面
   get "tweet" => "posts#new"
   post "tweet/success" => "posts#create"
+  #投稿編集時に既存の値取得
+  get "posts/:id/edit" => "posts#edit"
+  #投稿編集
+  post "posts/:id/update" => "posts#update"
+  #投稿削除
+ # post "posts/:id/destroy" => "posts#destroy"
   #問い合わせフォーム
   get "contact" => "home#contact"
   #下記問い合わせフォームはSendgrid使えないから保留
