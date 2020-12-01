@@ -2,14 +2,14 @@
  <div>
   <%= form_tag(tweet_success_path, method: :post) do %>
     <h3>投稿画面</h3>
-    <div>
+    <div class="new-post">
       <!--name内に対応するカラムのタイプを入力 -->
       <textarea id="textarea" name="string" placeholder="タイトル" class="form-control"></textarea>
     </div>
-    <div>
-      <textarea id="textarea" name="text" placeholder="投稿内容" class="form-control"></textarea>
+    <div class="new-post">
+      <textarea id="textarea" name="text" placeholder="詳細" class="form-control"></textarea>
     </div>
-    <div>
+    <div class="new-post">
       <input type="submit" class="form-control">
     </div>
   <% end %>
