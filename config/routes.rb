@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   #投稿編集
   post "posts/:id/update" => "posts#update"
   #投稿削除
- # post "posts/:id/destroy" => "posts#destroy"
+  post "posts/:id/destroy" => "posts#destroy"
   #問い合わせフォーム
   get "contact" => "home#contact"
   #下記問い合わせフォームはSendgrid使えないから保留

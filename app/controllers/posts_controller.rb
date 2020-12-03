@@ -18,7 +18,8 @@ class PostsController < ApplicationController
   end
   
   def destroy
-    @post=Post.find_by(id: params[:id])
-    @post.destroy
+    @post = Post.find_by(id: params[:id])
+    @post.destroy #destroyメソッドを使用し対象のツイートを削除する。
+    redirect_to(root_path)
   end
 end
