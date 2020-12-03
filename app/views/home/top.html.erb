@@ -20,6 +20,7 @@
     <% end %>
   </tbody>
 </table>
+<%= link_to "csvで出力する",excel_path(format: :csv), class: 'btn btn-primary' %>
 <% else %>
 <div class="button_wrapper">
 <%= link_to "Sign UP",  new_account_registration_path, class: "btn-circle-border-double" %>

@@ -21,6 +21,8 @@ Rails.application.routes.draw do
   post "posts/:id/update" => "posts#update"
   #投稿削除
   post "posts/:id/destroy" => "posts#destroy"
+  #CSV出力
+  get "excel" => "posts#index"
   #問い合わせフォーム
   get "contact" => "home#contact"
   #下記問い合わせフォームはSendgrid使えないから保留
