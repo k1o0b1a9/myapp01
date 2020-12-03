@@ -16,12 +16,10 @@
         <li class="nav-item">
         <%= link_to "Home", root_path, class: "nav-link text-decoration-none fas fa-home" %>
         </li>
-        <li class="nav-item">
-        <%= link_to "About", about_path, class: "nav-link text-decoration-none fas fa-book-open" %>
-        </li>
-        <li class="nav-item">
-        <%= link_to "Contact", contact_path, class: "nav-link text-decoration-none fas fa-address-card" %>
-        </li>
+        <!-- ContactページはSedngridが機能していないので停止中 -->
+        <!--<li class="nav-item"> -->
+        <%# <%= link_to "Contact", contact_path, class: "nav-link text-decoration-none fas fa-address-card" %>
+        <!--</li> -->
         <% if account_signed_in? %>
         <li class="nav-item">
         <%= link_to "Post", tweet_path, class: "nav-link text-decoration-none fas fa-plus-square" %>
@@ -30,6 +28,9 @@
         <%= link_to "Log out",  destroy_account_session_path, method: :delete, class: "nav-link text-decoration-none fas fa-sign-out-alt" %>
         </li>
         <% else %>
+        <li class="nav-item">
+        <%= link_to "About", about_path, class: "nav-link text-decoration-none fas fa-book-open" %>
+        </li>
         <li class="nav-item">
         <%= link_to "Log in",  account_session_path, class: "nav-link text-decoration-none fas fa-sign-in-alt" %>
         </li>
