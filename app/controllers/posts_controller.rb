@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :baria_account, only: [:edit, :destroy, :update]
   def new
   end
   
@@ -22,4 +23,11 @@ class PostsController < ApplicationController
     @post.destroy #destroyメソッドを使用し対象のツイートを削除する。
     redirect_to(root_path)
   end
+  
+  private
+   def baria_account
+    unless Post.find(params[:id]).account.id.to_i == current_account.id
+        redirect_to root_path(current_account)
+    end
+   end
 end
