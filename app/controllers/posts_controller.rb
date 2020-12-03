@@ -27,7 +27,10 @@ class PostsController < ApplicationController
   private
    def baria_account
     unless Post.find(params[:id]).account.id.to_i == current_account.id
+      #投稿者とidが一致しなくても管理者である場合編集可能
+      unless current_account.admin?
         redirect_to root_path(current_account)
+      end
     end
    end
 end
